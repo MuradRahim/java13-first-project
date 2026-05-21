@@ -1,4 +1,4 @@
-package string;
+package opp;
 
 public class Employee extends AbstractHuman {
     private String address;

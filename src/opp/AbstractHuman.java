@@ -1,4 +1,4 @@
-package string;
+package opp;
 
 public abstract class AbstractHuman {
     private String firstName;

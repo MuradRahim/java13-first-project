@@ -1,4 +1,4 @@
-package string;
+package opp;
 
 public class Human extends AbstractHuman {
     private String colorOfHair;
