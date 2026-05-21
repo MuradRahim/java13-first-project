@@ -4,6 +4,7 @@ public class Human extends AbstractHuman {
     private String colorOfHair;
     private String tall;
     private String city;
+    private String colorOfEyes;
 
     @Override
     void sayAboutYourself() {
@@ -36,5 +37,13 @@ public class Human extends AbstractHuman {
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    public String getColorOfEyes() {
+        return colorOfEyes;
+    }
+
+    public void setColorOfEyes(String colorOfEyes) {
+        this.colorOfEyes = colorOfEyes;
     }
 }
