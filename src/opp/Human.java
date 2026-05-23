@@ -12,9 +12,6 @@ public class Human extends AbstractHuman {
         System.out.println("I live in "+ city);
     }
 
-
-
-
     public String getColorOfHair() {
         return colorOfHair;
     }

@@ -1,5 +1,7 @@
+package opp;
+
 /**
- * todo Document type PersonData
+ * todo Document type opp.PersonData
  */
 public class PersonData {
     String fullName;
@@ -9,7 +11,7 @@ public class PersonData {
 
     @Override
     public String toString() {
-        return "PersonData{" +
+        return "opp.PersonData{" +
             "fullName='" + fullName + '\'' +
             ", age=" + age +
             ", money=" + money +

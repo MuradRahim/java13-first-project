@@ -1,15 +1,11 @@
-import java.util.ArrayList;
+package динамическийМассивArrayList;
+
 import java.util.List;
 import java.util.Scanner;
-/*
-* "njnkdscm;sd
-* slkdcsdcadaslcsdmcsdc
-* skdjcnkdzmcdm
-* jdncndlkmclkdzm
-* */
-public class ArrTask {
+
+public class ArrayList {
     public static void main(String[] args) {
-        List<String> person = new ArrayList<>();//Динамический массив
+        List<String> person = new java.util.ArrayList<>();//Динамический массив
         Scanner scanner = new Scanner(System.in);
         int count = 2;// Потом увеличиваем
         System.out.print("Давай познакомимся? Да или Нет:");

@@ -7,6 +7,7 @@ public abstract class AbstractHuman {
     private int age;
     private String gender;
 
+
     abstract void sayAboutYourself();
 
     public String getFirstName() {

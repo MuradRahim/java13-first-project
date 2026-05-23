@@ -1,9 +1,11 @@
+package условныеОператоры;
+
 import java.util.Scanner;
 
 /**
- * todo Document type Main
+ * todo Document type условныеОператоры.While
  */
-public class Main {
+public class While {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

@@ -1,3 +1,5 @@
+package циклы;
+
 import java.util.Scanner;
 
 public class ForEach {

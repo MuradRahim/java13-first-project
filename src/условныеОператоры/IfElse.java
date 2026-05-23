@@ -1,3 +1,5 @@
+package условныеОператоры;
+
 import java.util.Scanner;
 
 public class IfElse {

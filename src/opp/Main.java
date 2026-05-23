@@ -14,22 +14,7 @@ public class Main {
         human1.setLastName("Азатович");
         human1.setCity("Бишкек");
 
-        human1.setColorOfHair("Черный");
-
-        //===============================
-        //===============================
-
-        human1.setColorOfHair("Серый");
-
-        //===============================
-        //===============================
-
-        human1.setColorOfHair("Белый");
-
-        System.out.println(human1.getColorOfHair());
-
-//        employee1.sayAboutYourself();
-//        System.out.println("----------------------");
-//        human1.sayAboutYourself();
+        employee1.sayAboutYourself();
+        human1.sayAboutYourself();
     }
 }

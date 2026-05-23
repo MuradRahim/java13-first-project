@@ -1,4 +1,4 @@
-import restoran.Dto;
+package приложениеКалькулятор;
 
 import java.util.Locale;
 import java.util.Scanner;

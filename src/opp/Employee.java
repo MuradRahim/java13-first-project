@@ -6,15 +6,11 @@ public class Employee extends AbstractHuman {
     private String tabNumber;
     private String position;
 
-
     @Override
     void sayAboutYourself() {
         System.out.println("I am " + super.getFirstName() + " " + super.getLastName());
         System.out.println("I work like " + position + " in store");
     }
-
-
-
 
     public String getAddress() {
         return address;
