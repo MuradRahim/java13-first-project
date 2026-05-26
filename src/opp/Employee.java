@@ -1,40 +1,9 @@
 package opp;
 
 public class Employee extends AbstractHuman {
-    private String address;
-    private String phone;
-    private String tabNumber;
     private String position;
-
-    @Override
-    void sayAboutYourself() {
-        System.out.println("I am " + super.getFirstName() + " " + super.getLastName());
-        System.out.println("I work like " + position + " in store");
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getTabNumber() {
-        return tabNumber;
-    }
-
-    public void setTabNumber(String tabNumber) {
-        this.tabNumber = tabNumber;
-    }
+    private int salary;
+    private String experience;
 
     public String getPosition() {
         return position;
@@ -42,5 +11,21 @@ public class Employee extends AbstractHuman {
 
     public void setPosition(String position) {
         this.position = position;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    public String getExperience() {
+        return experience;
+    }
+
+    public void setExperience(String experience) {
+        this.experience = experience;
     }
 }

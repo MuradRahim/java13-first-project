@@ -3,18 +3,21 @@ package opp;
 public class Main {
 
     public static void main(String[] args) {
-        Employee employee1 = new Employee();
-        employee1.setFirstName("Келдибек");
-        employee1.setLastName("Камалов");
-        employee1.setSecondName("Торокулович");
-        employee1.setPosition("Seller");
+        AbstractHuman student = new Student();
+        student.setAge(21);
+        student.setGender("male");
+        student.setFirstName("Аза");
+        student.setLastName("Азамат");
+        student.setSecondName("Азатович");
 
-        Human human1 = new Human();
-        human1.setFirstName("Азат");
-        human1.setLastName("Азатович");
-        human1.setCity("Бишкек");
+        AbstractHuman employee = new Employee();
+        employee.setAge(23);
+        employee.setGender("male");
+        employee.setFirstName("Расул");
+        employee.setLastName("Расулович");
 
-        employee1.sayAboutYourself();
-        human1.sayAboutYourself();
+        System.out.println(student.getFullName());
+        System.out.println(employee.getFullName());
+
     }
 }

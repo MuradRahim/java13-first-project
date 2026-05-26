@@ -1,16 +1,10 @@
 package opp;
 
-public class Human extends AbstractHuman {
+public class Human {
     private String colorOfHair;
     private String tall;
     private String city;
     private String colorOfEyes;
-
-    @Override
-    void sayAboutYourself() {
-        System.out.println("I am " + super.getFirstName() + " " + super.getLastName());
-        System.out.println("I live in "+ city);
-    }
 
     public String getColorOfHair() {
         return colorOfHair;

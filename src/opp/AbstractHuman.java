@@ -7,8 +7,9 @@ public abstract class AbstractHuman {
     private int age;
     private String gender;
 
-
-    abstract void sayAboutYourself();
+    public String getFullName() {
+        return getFirstName() + " " + getLastName();
+    }
 
     public String getFirstName() {
         return firstName;
@@ -26,14 +27,6 @@ public abstract class AbstractHuman {
         this.lastName = lastName;
     }
 
-    public String getSecondName() {
-        return secondName;
-    }
-
-    public void setSecondName(String secondName) {
-        this.secondName = secondName;
-    }
-
     public int getAge() {
         return age;
     }
@@ -48,5 +41,13 @@ public abstract class AbstractHuman {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public String getSecondName() {
+        return secondName;
+    }
+
+    public void setSecondName(String secondName) {
+        this.secondName = secondName;
     }
 }
