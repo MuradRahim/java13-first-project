@@ -1,9 +1,17 @@
 package opp;
 
-public class Employee extends AbstractHuman {
+public class Employee extends Human implements PersonInfo {
     private String position;
-    private int salary;
-    private String experience;
+    private int experience;
+
+    @Override
+    public void showInfo() {
+        System.out.println("My name is " + getFirstName());
+        System.out.println("My age is " + getAge());
+        System.out.println("I was born in " + getBirthDate());
+        System.out.println("I work like " + getPosition());
+        System.out.println("I have experience " + getExperience());
+    }
 
     public String getPosition() {
         return position;
@@ -13,19 +21,11 @@ public class Employee extends AbstractHuman {
         this.position = position;
     }
 
-    public int getSalary() {
-        return salary;
-    }
-
-    public void setSalary(int salary) {
-        this.salary = salary;
-    }
-
-    public String getExperience() {
+    public int getExperience() {
         return experience;
     }
 
-    public void setExperience(String experience) {
+    public void setExperience(int experience) {
         this.experience = experience;
     }
 }

@@ -3,21 +3,25 @@ package opp;
 public class Main {
 
     public static void main(String[] args) {
-        AbstractHuman student = new Student();
-        student.setAge(21);
-        student.setGender("male");
-        student.setFirstName("Аза");
-        student.setLastName("Азамат");
-        student.setSecondName("Азатович");
+        Student student1 = new Student();
+        student1.setFirstName("John");
+        student1.setAge(23);
+        student1.setBirthDate("21.12.2006");
+        student1.setGender("Male");
+        student1.setCourse(3);
+        student1.setFaculty("Programming");
 
-        AbstractHuman employee = new Employee();
-        employee.setAge(23);
-        employee.setGender("male");
-        employee.setFirstName("Расул");
-        employee.setLastName("Расулович");
+        Employee employee = new Employee();
+        employee.setFirstName("Mark");
+        employee.setAge(22);
+        employee.setBirthDate("21.12.2005");
+        employee.setExperience(3);
+        employee.setPosition("Taxi Driver");
 
-        System.out.println(student.getFullName());
-        System.out.println(employee.getFullName());
+
+        student1.showInfo();
+        System.out.println("--------------------------------");
+        employee.showInfo();
 
     }
 }

@@ -1,40 +1,67 @@
 package opp;
 
 public class Human {
-    private String colorOfHair;
-    private String tall;
-    private String city;
-    private String colorOfEyes;
+    private String firstName;
+    private String lastName;
+    private String secondName;
+    private int age;
+    private String gender;
+    private String birthDate;
+    private String ID;
 
-    public String getColorOfHair() {
-        return colorOfHair;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public void setColorOfHair(String colorOfHair) {
-        this.colorOfHair = colorOfHair;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public String getTall() {
-        return tall;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setTall(String tall) {
-        this.tall = tall;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
-    public String getCity() {
-        return city;
+    public String getSecondName() {
+        return secondName;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public void setSecondName(String secondName) {
+        this.secondName = secondName;
     }
 
-    public String getColorOfEyes() {
-        return colorOfEyes;
+    public int getAge() {
+        return age;
     }
 
-    public void setColorOfEyes(String colorOfEyes) {
-        this.colorOfEyes = colorOfEyes;
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(String birthDate) {
+        this.birthDate = birthDate;
+    }
+
+    public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
     }
 }

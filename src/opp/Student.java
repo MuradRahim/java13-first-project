@@ -1,42 +1,31 @@
 package opp;
 
-/**
- * Наследоваться от AbstractHuman
- * Добавить свои поля для описание студента
- * Это студент универа и мы должны
- * создать класс для учета студентов
- * */
-public class Student extends AbstractHuman {
-    private String course;
-    private int IQ;
-    private String facultet;
+public class Student extends Human implements PersonInfo {
+    private int course;
+    private String faculty;
 
-    public int getIQ() {
-        return IQ;
+    @Override
+    public void showInfo() {
+        System.out.println("My name is " + getFirstName());
+        System.out.println("My age is " + getAge());
+        System.out.println("I was born in " + getBirthDate());
+        System.out.println("I study on " + getCourse());
+        System.out.println("My faculty is " + getFaculty());
     }
 
-    public void setIQ(int IQ) {
-        this.IQ = IQ;
-    }
-
-    public String getCourse() {
+    public int getCourse() {
         return course;
     }
 
-    public void setCourse(String course) {
+    public void setCourse(int course) {
         this.course = course;
     }
 
-    public String getFacultet() {
-        return facultet;
+    public String getFaculty() {
+        return faculty;
     }
 
-    public void setFacultet(String facultet) {
-        this.facultet = facultet;
-    }
-
-    @Override
-    public String getFullName() {
-        return getFirstName()+ " " + getLastName() + " " + getSecondName();
+    public void setFaculty(String faculty) {
+        this.faculty = faculty;
     }
 }
