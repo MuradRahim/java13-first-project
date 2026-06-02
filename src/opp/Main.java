@@ -11,5 +11,17 @@ public class Main {
         student2.setBudget(true);
 
         student2.showInfo();
+
+        System.out.println("---------------------------------------");
+        System.out.println("---------------------------------------");
+
+        Employee employee = new Employee("Али", "Аскаров", 24, "М");
+        employee.setSalary(120000);
+        employee.setPosition("Programmer");
+        employee.setID("007");
+        employee.setBirthDate("02.07.2000");
+        employee.setExperience(2);
+
+        employee.showInfo();
     }
 }

@@ -29,6 +29,13 @@ public class Employee {
         this.salary = salary;
     }
 
+    public Employee(String firstName, String lastName, int age, String gender) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.gender = gender;
+    }
+
     public void showInfo() {
         System.out.println("My name is " + getFirstName() + " " + getLastName());
         System.out.println("My age is " + getAge());
