@@ -18,12 +18,20 @@ public class EmployeeService implements PersonInfo {
 
     @Override
     public void personalInfo(String ID) {
+        for (Employee emp : employees) {
+            if (ID.equals(emp.getID())) {
 
+            }
+        }
     }
 
     @Override
     public void infoOfPhoneNumber(String ID) {
+        for (Employee emp : employees) {
+            if (ID.equals(emp.getID())) {
 
+            }
+        }
     }
 
     public List<Employee> getEmployees() {
