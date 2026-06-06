@@ -10,6 +10,7 @@ public class Main {
         employee1.setFirstName("Касым");
         employee1.setLastName("Жомарт уулу");
         employee1.setAddress("Москва");
+
         employeeService.setEmployee(employee1);
 
         Employee employee2 = new Employee();
@@ -17,6 +18,7 @@ public class Main {
         employee2.setFirstName("Марат");
         employee2.setLastName("Кожомкулов");
         employee2.setAddress("Бишкек");
+
         employeeService.setEmployee(employee2);
 
         employeeService.infoOfAddress("2");
