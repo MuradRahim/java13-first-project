@@ -1,41 +1,26 @@
 package opp;
 
-public class Employee {
-    private String firstName;
-    private String lastName;
-    private String secondName;
-    private int age;
-    private String gender;
-    private String birthDate;
+public class Employee extends AbstractHuman {
+
     private String ID;
     private String position;
     private int experience;
     private int salary;
 
     public Employee() {
+        super();
     }
 
     public Employee(String secondName, String firstName, String lastName, int age, String gender, String birthDate, String ID, String position, int experience,
         int salary) {
-        this.secondName = secondName;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-        this.gender = gender;
-        this.birthDate = birthDate;
+        super(firstName,lastName,secondName,age,gender,birthDate);
         this.ID = ID;
         this.position = position;
         this.experience = experience;
         this.salary = salary;
     }
 
-    public Employee(String firstName, String lastName, int age, String gender) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-        this.gender = gender;
-    }
-
+    @Override
     public void showInfo() {
         System.out.println("My name is " + getFirstName() + " " + getLastName());
         System.out.println("My age is " + getAge());
@@ -45,7 +30,13 @@ public class Employee {
         System.out.println("I have salary " + getSalary());
     }
 
-    //---get and set ----------------------
+    public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
 
     public String getPosition() {
         return position;
@@ -69,61 +60,5 @@ public class Employee {
 
     public void setSalary(int salary) {
         this.salary = salary;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getSecondName() {
-        return secondName;
-    }
-
-    public void setSecondName(String secondName) {
-        this.secondName = secondName;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    public String getBirthDate() {
-        return birthDate;
-    }
-
-    public void setBirthDate(String birthDate) {
-        this.birthDate = birthDate;
-    }
-
-    public String getID() {
-        return ID;
-    }
-
-    public void setID(String ID) {
-        this.ID = ID;
     }
 }
