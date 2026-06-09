@@ -11,5 +11,7 @@ public class Main {
         ClassTwo classTwo = new ClassTwo();
         classTwo.name = "Karl";
         classTwo.someMethod();
+
+        Object object = new Object();
     }
 }

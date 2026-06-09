@@ -9,8 +9,8 @@ public class Student extends AbstractHuman {
     private String yearOfStudy;
 
     public Student(String firstName, String lastName, String secondName, int age, String gender,
-        String birthDate, String ID, int course, String faculty, Boolean isBudget, String yearOfStudy) {
-        super(firstName,lastName,secondName,age,gender,birthDate);
+        String birthDate, String ID, int course, String faculty, Boolean isBudget, String yearOfStudy, String address, String phoneNumber) {
+        super(firstName,lastName,secondName,age,gender,birthDate, address, phoneNumber);
         this.ID = ID;
         this.course = course;
         this.faculty = faculty;

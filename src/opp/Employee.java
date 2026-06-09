@@ -11,9 +11,9 @@ public class Employee extends AbstractHuman {
         super();
     }
 
-    public Employee(String secondName, String firstName, String lastName, int age, String gender, String birthDate, String ID, String position, int experience,
-        int salary) {
-        super(firstName,lastName,secondName,age,gender,birthDate);
+    public Employee(String firstName,String lastName, String secondName, int age, String gender, String birthDate, String ID, String position, int experience,
+        int salary, String address, String phoneNumber) {
+        super(firstName,lastName,secondName,age,gender,birthDate, address, phoneNumber);
         this.ID = ID;
         this.position = position;
         this.experience = experience;

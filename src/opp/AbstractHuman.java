@@ -9,15 +9,18 @@ public abstract class AbstractHuman {
     private String gender;
     private String birthDate;
     private String address;
+    private String phoneNumber;
 
 
-    public AbstractHuman(String firstName, String lastName, String secondName, int age, String gender, String birthDate) {
+    public AbstractHuman(String firstName, String lastName, String secondName, int age, String gender, String birthDate, String address, String phoneNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.secondName = secondName;
         this.age = age;
         this.gender = gender;
         this.birthDate = birthDate;
+        this.address = address;
+        this.phoneNumber = phoneNumber;
     }
 
     public AbstractHuman() {
@@ -80,5 +83,13 @@ public abstract class AbstractHuman {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 }

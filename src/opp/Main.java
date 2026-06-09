@@ -1,26 +1,30 @@
 package opp;
 
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
         EmployeeService employeeService = new EmployeeService();
+        StudentService studentService = new StudentService();
 
-        Employee employee1 = new Employee();
-        employee1.setID("1");
-        employee1.setFirstName("Касым");
-        employee1.setLastName("Жомарт уулу");
-        employee1.setAddress("Москва");
+        employeeService.setEmployees(
+            List.of(
+                new Employee("Касым", "Жомарт уулу", "Абдылдаев", 30, "мужской", "1994-05-12", "E001", "инженер", 5, 120000, "Бишкек", "8800987654"),
+                new Employee("Марат", "Кожомкулов", "Садыров", 28, "мужской", "1996-03-20", "E002", "аналитик", 3, 110000, "Москва", "89012345678"),
+                new Employee("Айгуль", "Турдубекова", "Жумабаева", 35, "женский", "1989-11-07", "E003", "менеджер", 10, 140000, "Алматы", "87019876543"),
+                new Employee("Эркин", "Осмоналиев", "Касымов", 40, "мужской", "1984-08-15", "E004", "руководитель", 15, 200000, "Астана", "86011122334"),
+                new Employee("Назира", "Алымова", "Токтогулова", 29, "женский", "1995-01-30", "E005", "дизайнер", 4, 95000, "Ташкент", "85015566778"),
+                new Employee("Бакыт", "Иманалиев", "Султанов", 33, "мужской", "1991-09-10", "E006", "разработчик", 8, 160000, "Екатеринбург", "84019988776"),
+                new Employee("Гульнара", "Мамытова", "Абдрахманова", 31, "женский", "1993-06-22", "E007", "маркетолог", 6, 130000, "Новосибирск", "83013322110"),
+                new Employee("Азамат", "Торобаев", "Нурбеков", 27, "мужской", "1997-04-05", "E008", "тестировщик", 2, 85000, "Казань", "82016655443"),
+                new Employee("Чолпон", "Эрматова", "Каримова", 34, "женский", "1990-12-18", "E009", "HR-специалист", 7, 125000, "Санкт-Петербург", "81017788990"),
+                new Employee("Данияр", "Сатаров", "Акматов", 38, "мужской", "1986-07-29", "E010", "финансовый аналитик", 12, 180000, "Омск", "80014455667")
+            )
+        );
 
-        employeeService.setEmployee(employee1);
 
-        Employee employee2 = new Employee();
-        employee2.setID("2");
-        employee2.setFirstName("Марат");
-        employee2.setLastName("Кожомкулов");
-        employee2.setAddress("Бишкек");
-
-        employeeService.setEmployee(employee2);
-
-        employeeService.infoOfAddress("2");
+        employeeService.infoOfAddress("E007");
+        employeeService.infoOfPhoneNumber("E007");
     }
 }
