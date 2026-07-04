@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class ArrayListOblast {
     private static List oblast = List.of(
-        "Чуй", "Талас", "Баткен", "Ош",
-        "Манас", "Нарын", "Ыссык-Кол"
+        "чуй", "талас", "баткен", "ош",
+        "манас", "нарын", "ыссык-кол"
     );
 
     public static void main(String[] args) {
@@ -16,11 +16,11 @@ public class ArrayListOblast {
         System.out.println("При ошибке все начнется с начало!");
         int counter = oblast.size();
         while (counter > 0) {
-            String oblName = sc.nextLine();
+            String oblName = sc.nextLine().toLowerCase();
             if (oblast.contains(oblName)) {
                 System.out.println("Верно!");
                 counter--;
-                System.out.println("Осталось еще название "+counter+"ти области");
+                System.out.println("Осталось еще "+counter);
             } else {
                 System.out.println("Ты ответил не верно");
                 System.out.println("Начнем все с начало");
