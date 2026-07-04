@@ -1,17 +1,13 @@
 package modifier;
 
+import opp.Employee;
+
 /**
- * todo Document type Main
+ * todo Document type SetNames
  */
 public class Main {
 
     public static void main(String[] args) {
-        ClassOne classOne = new ClassOne();
-
-        ClassTwo classTwo = new ClassTwo();
-        classTwo.name = "Karl";
-        classTwo.someMethod();
-
-        Object object = new Object();
+        Employee employee = new Employee();
     }
 }

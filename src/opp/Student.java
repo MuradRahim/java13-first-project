@@ -8,6 +8,10 @@ public class Student extends AbstractHuman {
     private boolean isBudget;
     private String yearOfStudy;
 
+    public Student(String firstName, String lastName, String secondName) {
+        super(firstName,lastName,secondName);
+    }
+
     public Student(String firstName, String lastName, String secondName, int age, String gender,
         String birthDate, String ID, int course, String faculty, Boolean isBudget, String yearOfStudy, String address, String phoneNumber) {
         super(firstName,lastName,secondName,age,gender,birthDate, address, phoneNumber);

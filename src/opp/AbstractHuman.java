@@ -11,6 +11,12 @@ public abstract class AbstractHuman {
     private String address;
     private String phoneNumber;
 
+    public AbstractHuman(String firstName, String lastName, String secondName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.secondName = secondName;
+    }
+
 
     public AbstractHuman(String firstName, String lastName, String secondName, int age, String gender, String birthDate, String address, String phoneNumber) {
         this.firstName = firstName;

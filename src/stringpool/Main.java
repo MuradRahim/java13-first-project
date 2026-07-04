@@ -1,7 +1,7 @@
 package stringpool;
 
 /**
- * todo Document type Main
+ * todo Document type SetNames
  */
 public class Main {
 
