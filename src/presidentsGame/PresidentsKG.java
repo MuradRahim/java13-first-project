@@ -1,4 +1,4 @@
-package collection;
+package presidentsGame;
 
 import java.util.List;
 

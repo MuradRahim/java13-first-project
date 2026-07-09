@@ -1,8 +1,8 @@
-package collection;
+package presidentsGame;
 
 import java.util.Scanner;
 
-import static collection.PresidentsKG.presidents;
+import static presidentsGame.PresidentsKG.presidents;
 
 public class PresidentsGame {
 
