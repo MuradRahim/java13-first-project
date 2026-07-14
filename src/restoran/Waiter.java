@@ -12,8 +12,10 @@ public class Waiter {
             System.out.print("Хотите " + nameSup + ": ");
             count = scanner.nextInt();
         } while (count < 1 || count > 10);
+
         System.out.print("У нас есть размер 0.45 / 0.7\nКакую выбираете: 1 или 2 : ");
         int size = scanner.nextInt();
+
         int tmpPrice = (size == 1) ? smallPrice : bigPrice;
 
         String s = new String();

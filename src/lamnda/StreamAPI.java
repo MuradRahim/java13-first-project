@@ -36,6 +36,21 @@ public class StreamAPI {
     );
 
     public static void main(String[] args) {
+        // 5. Найти среднюю зарплату всех разработчиков (у кого в должности есть "разработчик")
+        // Ожидаемый результат: ~133000
+        double avaSalary = employees.stream()
+            .filter(employee -> employee.getPosition().)
+            .mapToInt()
+            .average();
+
+        System.out.println("Среде зп разработчиков: " + avaSalary);
+
+
+
+
+
+
+
         //    Найти всех сотрудников которые живут Бишкеке
 //        long count = employees.stream()
 //            .filter(employee -> employee.getName().equals("Азамат"))
@@ -51,5 +66,7 @@ public class StreamAPI {
         empPhone.forEach(System.out::println);
 
         //Получить список String где будет лежать ИМЯ и Фамилия и адрес ФОРМАТ "Азамат Кубанычбеков Адрес: Токмок, ул. Шамшинская 14"
+
+
     }
 }
