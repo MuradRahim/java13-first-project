@@ -19,12 +19,12 @@ public class Restaurant {
         System.out.println("========== Добро пожаловать Кафе Манас ======== \n");
 
         System.out.println("Меня зовут " + nurlan.name + " Я примнимаю заказ напитков");
-        Dto dtoCola = nurlan.методКоторыйПринимаетЗаказНапиков(scanner,"Кока-Кола", 50, 80);
-        Dto dtoFanta = nurlan.методКоторыйПринимаетЗаказНапиков(scanner, "Фанта", 50, 80);
+        Dto dtoCola = nurlan.getDrinkOrders(scanner,"Кока-Кола", 50, 80);
+        Dto dtoFanta = nurlan.getDrinkOrders(scanner, "Фанта", 50, 80);
 
         System.out.println("Меня зовут " + kairat.name + " Я примнимаю заказ супов");
-        Dto tomYam = kairat.методКоторыйПринимаетЗаказСупы(scanner, "Том-Ям", 200, 400);
-        Dto borsh = kairat.методКоторыйПринимаетЗаказСупы(scanner,"Борщ", 200, 400);
+        Dto tomYam = kairat.getSupOrders(scanner, "Том-Ям", 200, 400);
+        Dto borsh = kairat.getSupOrders(scanner,"Борщ", 200, 400);
 
         System.out.println("Вы заказали:");
         System.out.println("- Кока-Колы = " + (dtoCola.size == 1 ? "0.5" : "1.0") + " объем " + dtoCola.count + " штук : стоимость " + dtoCola.totalSum);

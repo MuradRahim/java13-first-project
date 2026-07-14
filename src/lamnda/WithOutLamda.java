@@ -34,12 +34,7 @@ public class WithOutLamda {
                 }
             })
             // 3. Компаратор (интерфейс Comparator)
-            .sorted(new SortEmpName<String>() {
-                @Override
-                public int compare(String name1, String name2) {
-                    return name2.compareTo(name1);
-                }
-            })
+//            .sorted(Comparator.comparing())
             // 4. Вывод (интерфейс Consumer)
             .forEach(new Consumer<String>() {
                 @Override

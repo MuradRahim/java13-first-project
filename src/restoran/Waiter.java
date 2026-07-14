@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Waiter {
     public String name;
 
-    public Dto методКоторыйПринимаетЗаказСупы(Scanner scanner, String nameSup, int smallPrice, int bigPrice) {
+    public Dto getSupOrders(Scanner scanner, String nameSup, int smallPrice, int bigPrice) {
         int count;
         do {
             System.out.print("Принимаем заказ супов.");
@@ -24,7 +24,7 @@ public class Waiter {
         return dto;
     }
 
-    public Dto методКоторыйПринимаетЗаказНапиков(Scanner scanner, String nameDrink, int smallPrice, int bigPrice) {
+    public Dto getDrinkOrders(Scanner scanner, String nameDrink, int smallPrice, int bigPrice) {
         int count;
         do {
             System.out.println("Вы можете заказать за раз только до 10 штук");
